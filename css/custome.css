@@ -1,7 +1,9 @@
 :root {
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #ffc107; /* Merged the two variables */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* color:#FDB714 */
 /* Define custom font */
 @font-face {
@@ -81,12 +83,14 @@ body {
 }
 
 .header {
+  margin-top: 70px;
   background: url("https://pmedia.launchgood.com/190106%2Fbody%2FWhatsApp_Image_2024-02-19_at_10_55_28.jpeg")
     center/cover no-repeat;
   width: 100%;
   color: white;
   padding: 50px 20px;
   position: relative;
+  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -512,4 +516,73 @@ body {
   right: 10px;
   font-size: 30px;
   cursor: pointer;
+}
+
+/* navbar: */
+.nav-item.active > .nav-link {
+  color: #fdb714;
+  font-weight: bold;
+}
+@media screen and (max-width: 995px) {
+  header {
+    background-image: none;
+  }
+}
+header {
+  background-color: #fff;
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  top: 0;
+  background-image: url(../imgs/line-2.svg);
+  background-size: 23%;
+  background-position: 244px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 995px) {
+  header .navbar-collapse {
+    background-color: #222524;
+  }
+}
+@media screen and (max-width: 995px) {
+  .navbar-nav {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 995px) {
+  header .navbar-nav li {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 995px) {
+  header .navbar-nav .nav-link {
+    color: #fff;
+  }
+}
+/* .navbar li {
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 5px;
+} */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-nav li a:after {
+  content: "|";
+  margin-right: 8px;
+  color: #606060;
 }
