@@ -306,7 +306,7 @@
               >
                 <div class="card-body bg-warning text-center p-4">
                   <img
-                    src="./imgs/self-growth_1184800.svg"
+                    src="./imgs/benefit.png"
                     alt="ترقية"
                     class="img-fluid mb-3"
                     style="max-width: 64px"
@@ -594,29 +594,39 @@
 
           <!-- Contact Info Section -->
           <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
-            <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">تواصل معنا:</p>
-            <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">
-              البريد الإلكتروني:
-              <a
-                href="#"
-                class="text-decoration-none text-warning"
-                onclick="openEmailForm()"
-                >support@mtcgaza.com</a
+            <!-- استخدام Flexbox لعرض النصوص عموديًا -->
+            <div class="d-flex flex-column align-items-center">
+              <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">
+                تواصل معنا:
+              </p>
+              <p class="mb-0 mt-1 fs-6" style="font-size: 0.85rem">
+                البريد الإلكتروني:
+                <a
+                  href="#"
+                  class="text-decoration-none text-warning"
+                  onclick="openEmailForm()"
+                  >support@mtcgaza.com</a
+                >
+              </p>
+              <!-- واتساب -->
+              <p
+                class="mb-0 mt-1 fs-6 d-flex align-items-center"
+                style="font-size: 0.85rem; margin-top: 8px"
               >
-            </p>
-            <!-- واتساب -->
-            <p
-              class="mb-0 mt-1 fs-6"
-              style="font-size: 0.85rem; margin-top: 8px"
-            >
-              <a
-                href="https://wa.me/970595532700"
-                target="_blank"
-                class="text-decoration-none text-warning"
-              >
-                تواصل معنا عبر واتساب
-              </a>
-            </p>
+                <a
+                  href="https://wa.me/970595532700"
+                  target="_blank"
+                  class="text-decoration-none text-warning d-flex align-items-center"
+                >
+                  <img
+                    src="./imgs/whatsapp.png"
+                    alt="واتساب"
+                    style="width: 20px; height: 20px; margin-left: 8px"
+                  />
+                  تواصل معنا عبر واتساب
+                </a>
+              </p>
+            </div>
           </div>
 
           <!-- model -->
